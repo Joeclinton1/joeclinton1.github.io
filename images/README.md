@@ -8,7 +8,7 @@ Add images to this folder and update `index.html` to reference them.
 ## Research Projects
 - **planning-transformer.png** - Architecture diagram or D4RL results plot
 - **hand-teleop.gif** - Demo GIF showing hand tracking to robot joint mapping
-- **mapcoder.png** - NeurIPS Hackercup leaderboard screenshot or agent flow diagram
+- **promptmonkey.png** - NeurIPS Hackercup leaderboard screenshot or agent flow diagram
 - **hint-distill.png** - Training diagram showing hint distillation process
 - **vpct-text.png** - VPCT environment visualization
 
