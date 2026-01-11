@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe Clinton | ML Researcher</title>
+    <meta name="description" content="Machine Learning Researcher specializing in Offline RL, Robotics, and LLM Post-Training">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-photo">
+                    <!-- ADD: Professional headshot photo here -->
+                    <div class="photo-placeholder">Add photo</div>
+                </div>
+                <div class="hero-text">
+                    <h1>Joe Clinton</h1>
+                    <p class="tagline">Video Models for VLA &bull; Scalable Robot Learning &bull; Offline RL</p>
+                    <p class="affiliation">PhD Candidate, <a href="https://christopherlu.github.io/group_website/" target="_blank" rel="noopener">RoMA Lab</a>, UCL</p>
+                    <p class="intro">I research foundational AI for robotics, focusing on video model backbones for Vision-Language-Action models. I believe video generation architectures encode dynamics in ways VLMs cannot, enabling better generalisation and scaling toward embodied AGI. Supervised by <a href="https://christopherlu.github.io/" target="_blank" rel="noopener">Chris Xiaoxuan Lu</a> and <a href="https://dkanou.github.io/" target="_blank" rel="noopener">Dimitrios Kanoulas</a>. Funded by EPSRC Landscape Award.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Joeclinton1" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/joeclinton1" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="mailto:ucqncli@ucl.ac.uk" aria-label="Email">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Publication Section -->
+        <section class="section" id="publication">
+            <div class="container">
+                <h2>Publication</h2>
+                <div class="publication-card">
+                    <div class="publication-content">
+                        <h3>Planning Transformer: Long-Horizon Offline Reinforcement Learning with Planning Tokens</h3>
+                        <p class="authors">Joseph Clinton, Robert Lieck</p>
+                        <p class="venue">arXiv 2024</p>
+                        <div class="abstract" id="abstract">
+                            <p>Supervised learning approaches to offline reinforcement learning, particularly those utilizing the Decision Transformer, have shown effectiveness in continuous environments and for sparse rewards. However, they often struggle with long-horizon tasks due to the high compounding error of auto-regressive models. To overcome this limitation, we go beyond next-token prediction and introduce Planning Tokens, which contain high-level, long time-scale information about the agent's future. Predicting dual time-scale tokens at regular intervals enables our model to use these long-horizon Planning Tokens as a form of implicit planning to guide its low-level policy and reduce compounding error. This architectural modification significantly enhances performance on long-horizon tasks, establishing a new state-of-the-art in complex D4RL environments. Additionally, we demonstrate that Planning Tokens improve the interpretability of the model's policy through the interpretable plan visualisations and attention map.</p>
+                        </div>
+                        <button class="abstract-toggle" onclick="toggleAbstract()">Show abstract</button>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/abs/2409.09513" target="_blank" rel="noopener" class="btn">Paper</a>
+                            <a href="https://github.com/Joeclinton1/planning-transformer" target="_blank" rel="noopener" class="btn btn-secondary">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Projects Section -->
+        <section class="section" id="research">
+            <div class="container">
+                <h2>Research Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: Architecture diagram or results plot showing Planning Transformer performance -->
+                            <div class="image-placeholder">Add: Architecture diagram or results plot</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Planning Transformer</h3>
+                            <p>Novel enhancement to the Transformer architecture for offline RL that significantly improves long-horizon decision making. Master's thesis achieving state-of-the-art on D4RL benchmarks.</p>
+                            <div class="tags">
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">Offline RL</span>
+                                <span class="tag">Transformers</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://arxiv.org/abs/2409.09513" target="_blank" rel="noopener">Paper</a>
+                                <a href="https://github.com/Joeclinton1/planning-transformer" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: Demo GIF showing hand tracking to robot joint mapping -->
+                            <div class="image-placeholder">Add: Demo GIF of hand tracking</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>hand-teleop</h3>
+                            <p>Turn your webcam into real-time robot joint positions. Designed for LeRobot with Wilor GPU backend, Kalman smoothing, and plug-and-play integration. 48 GitHub stars.</p>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Computer Vision</span>
+                                <span class="tag">Robotics</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Joeclinton1/hand-teleop" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: Leaderboard screenshot or agent code flow diagram -->
+                            <div class="image-placeholder">Add: Leaderboard screenshot or code flow</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>MapCoder-Hackercup</h3>
+                            <p>Multi-step LLM coding agent achieving 4th place out of 800+ participants in the NeurIPS 2024 Meta Hackercup AI Open Track. Uses VLLM, RAG, parallel sampling, and multi-agent paradigms.</p>
+                            <div class="tags">
+                                <span class="tag">LLM Agents</span>
+                                <span class="tag">VLLM</span>
+                                <span class="tag">RAG</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Joeclinton1/MapCoder-Hackercup" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: Training diagram showing hint distillation process -->
+                            <div class="image-placeholder">Add: Training diagram</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Hint Distill</h3>
+                            <p>Self-supervised hint distillation for improving LLMs on code generation. Finetunes Qwen3-4B using KL-divergence distillation where the model with hint access teaches itself.</p>
+                            <div class="tags">
+                                <span class="tag">LLM Post-Training</span>
+                                <span class="tag">Distillation</span>
+                                <span class="tag">PyTorch</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Joeclinton1/hint-distill" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: VPCT environment visualization -->
+                            <div class="image-placeholder">Add: Environment visualization</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>vpct-text</h3>
+                            <p>Prime verifiers environment for VPCT scenes. Won the Iterate London RL Environment Hackathon (Dec 2025). Scores model outputs predicting final bucket positions.</p>
+                            <div class="tags">
+                                <span class="tag">RL Environments</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Hackathon Winner</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Joeclinton1/vpct-text" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Source & Tools Section -->
+        <section class="section section-alt" id="tools">
+            <div class="container">
+                <h2>Open Source</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: Robot arm image or LeRobot project logo -->
+                            <div class="image-placeholder">Add: Robot arm or LeRobot logo</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>LeRobot Contributions</h3>
+                            <p>Open-source contributor to Hugging Face's LeRobot VLA model. Led imitation learning testing, improved data loading efficiency, contributed BlockPush environment, and ported HIL-SERL.</p>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Imitation Learning</span>
+                                <span class="tag">VLA</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/huggingface/lerobot" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: Browser screenshot of the URDF viewer with robot arm -->
+                            <div class="image-placeholder">Add: Browser screenshot</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>robot-arm-viewer</h3>
+                            <p>Browser-based URDF viewer with IK-driven click-and-drag controls. Compare low-cost robot arms, export DAE models, and visualize reachable workspaces.</p>
+                            <div class="tags">
+                                <span class="tag">Three.js</span>
+                                <span class="tag">URDF</span>
+                                <span class="tag">IK</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Joeclinton1/robot-arm-viewer" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: Grid of generated face images (128x128) -->
+                            <div class="image-placeholder">Add: Generated face grid</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Latent Diffusion Slim</h3>
+                            <p>State-of-the-art latent diffusion model trained on FFHQ for photo-realistic face generation up to 128x128px. Optimized for single GPU training. 100% coursework grade.</p>
+                            <div class="tags">
+                                <span class="tag">Diffusion Models</span>
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">Generative AI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Joeclinton1/latent-diffusion-slim" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: Detection screenshot showing dirty dishes being detected -->
+                            <div class="image-placeholder">Add: Detection screenshot</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Dirty Dish Detection</h3>
+                            <p>Hackathon project detecting when housemates leave dirty dishes using a hybrid of YOLO and traditional computer vision state tracking algorithms.</p>
+                            <div class="tags">
+                                <span class="tag">YOLO</span>
+                                <span class="tag">Computer Vision</span>
+                                <span class="tag">PyTorch</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Joeclinton1/dirty-dish-shamer" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: Scratch Addons extension screenshot or logo -->
+                            <div class="image-placeholder">Add: Extension screenshot</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Scratch Addons</h3>
+                            <p>Core contributor to browser extension with 593,000+ users. Developed 8 addons including a profiling tool for performance analysis of Scratch projects.</p>
+                            <div class="tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Browser Extension</span>
+                                <span class="tag">Profiling</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://scratchaddons.com/" target="_blank" rel="noopener">Website</a>
+                                <a href="https://github.com/ScratchAddons/ScratchAddons" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Side Projects & Startups Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2>Side Projects & Startups</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: Qualicoder app screenshot showing transcript analysis -->
+                            <div class="image-placeholder">Add: App screenshot</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Qualicoder</h3>
+                            <p>AI-first qualitative coding platform for transcript analysis. Helping consultants efficiently analyze interview and research data.</p>
+                            <div class="tags">
+                                <span class="tag">AI Startup</span>
+                                <span class="tag">React</span>
+                                <span class="tag">NLP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://qualicoder.web.app/" target="_blank" rel="noopener">Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: Cluque app screenshot showing puzzle interface -->
+                            <div class="image-placeholder">Add: App screenshot</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Cluque</h3>
+                            <p>Daily cryptic puzzle game with social features. Play the global challenge or compete with friends in groups. Built with React and Firebase subscriptions.</p>
+                            <div class="tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Consumer App</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://cluque.app" target="_blank" rel="noopener">Play</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: IBrecap site screenshot -->
+                            <div class="image-placeholder">Add: Site screenshot</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>IBrecap.com</h3>
+                            <p>Non-profit IB revision platform I founded and maintain. 1.1 million page views, #4 Google result for "IB revision". Full-stack PHP/SQL with custom CMS.</p>
+                            <div class="tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Full-Stack</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://ibrecap.com" target="_blank" rel="noopener">Visit</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- ADD: Screenshot of the 3D game engine running on Scratch -->
+                            <div class="image-placeholder">Add: Game screenshot</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>3D Game Engine</h3>
+                            <p>First complete 3D graphics and physics engine for Scratch. Built over 2 years with innovative binary space partitioning for efficiency. Demonstrates deep graphics understanding.</p>
+                            <div class="tags">
+                                <span class="tag">Scratch</span>
+                                <span class="tag">3D Graphics</span>
+                                <span class="tag">Physics</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://scratch.mit.edu/projects/868045282/" target="_blank" rel="noopener">Try it</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://github.com/Joeclinton1" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/joeclinton1" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="mailto:ucqncli@ucl.ac.uk">Email</a>
+                </div>
+                <p class="footer-note">PhD Candidate &bull; <a href="https://christopherlu.github.io/group_website/">RoMA Lab</a>, UCL</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
