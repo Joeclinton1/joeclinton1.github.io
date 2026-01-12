@@ -278,6 +278,32 @@ a:hover {
     box-shadow: var(--shadow-hover);
 }
 
+.project-card.featured {
+    border: 2px solid var(--color-accent);
+    position: relative;
+}
+
+.project-card.featured::before {
+    content: 'Coming Soon';
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--color-accent);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.coming-soon-text {
+    color: var(--color-accent);
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
 .project-image {
     aspect-ratio: 16 / 9;
     overflow: hidden;
